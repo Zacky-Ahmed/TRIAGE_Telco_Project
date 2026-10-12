@@ -1,0 +1,7 @@
+Model,TrainFraction,TrainPR_AUC,ValidationPR_AUC,TrainingRows
+Logistic Regression L2 (frozen baseline),0.3,0.6578813192472245,0.6504976494736346,1352.0
+Logistic Regression L2 (frozen baseline),0.6,0.6729864203327424,0.6518868492731441,2704.0
+Logistic Regression L2 (frozen baseline),1.0,0.6686918452997589,0.655144517031971,4507.0
+Tuned Random Forest (frozen settings),0.3,0.757626793335045,0.6404780027450939,1352.0
+Tuned Random Forest (frozen settings),0.6,0.769287332934511,0.6511646765779229,2704.0
+Tuned Random Forest (frozen settings),1.0,0.759644197873091,0.6600039538818089,4507.0

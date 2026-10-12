@@ -1,0 +1,10 @@
+ID,Issue,Options,Selected,Evidence,Status
+PP-01,TotalCharges blanks,median | median+indicator | zero | zero+indicator,ZERO,All 11 blanks occur at tenure=0; CV PR-AUC differences are negligible; zero is the simplest semantically plausible cumulative-charge representation.,APPROVED
+PP-02,Structural service categories,preserve | collapse | convert missing,PRESERVE,No internet service / No phone service are valid structural states.,APPROVED
+PP-03,Scaling,standard | none,MODEL_AWARE,Scale linear/distance representations; do not force scaling on tree/native-cat representations.,APPROVED
+PP-04,Class imbalance,none | class_weight | ROS,NO_SINGLE_WINNER,BAL-0 has strongest PR-AUC; BAL-W substantially raises recall; ROS adds no clear advantage over class weighting.,APPROVED_WITH_BRANCHES
+PP-05,Categorical encoding,one-hot | native categorical | target encoding,MODEL_AWARE_OH_PLUS_NATIVE,One-hot for linear/sklearn tree pipeline; native categorical contract for CatBoost. Cross-fitted target encoding not needed for low-cardinality default.,APPROVED
+PP-06,Demographic feature policy,full | reduced,KEEP_FULL_REFERENCE_AND_LIGHT_DEMO_CHALLENGER,"Removing gender + SeniorCitizen preserved baseline PR-AUC. This supports data minimization experimentation, not a fairness claim.",APPROVED
+PP-07,Engineered telecom features,default | reject | experimental,EXPERIMENTAL_NOT_DEFAULT,Linear-model ablation showed no meaningful PR-AUC improvement; retain as nonlinear-model hypotheses only.,APPROVED
+PP-08,Preprocessing sensitivity data,final test | OOF development predictions,OOF_DEVELOPMENT_ONLY,Avoid consuming final test; each OOF customer is predicted by a fold model that did not train on that customer.,APPROVED
+PP-09,Final test usage,development decisions | sealed,SEALED_FOR_MEMBER4,"No preprocessing/model-selection predictions are produced on the 1,409 final-test customers here.",APPROVED

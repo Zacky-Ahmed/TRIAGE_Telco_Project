@@ -1,0 +1,23 @@
+model,mean_fold_average_precision,fold_sd,pooled_oof_average_precision,recorded_test_average_precision,scope
+Logistic Regression,0.6616561497949907,0.0216379510099045,0.6585183529089189,,Development selection; recorded test values have disclosed prior exposure
+Decision Tree,0.6139545176342192,0.0258215194351404,0.6190059653405473,,Development selection; recorded test values have disclosed prior exposure
+Random Forest,0.6574625176511747,0.0239549033386723,0.6539406275368564,,Development selection; recorded test values have disclosed prior exposure
+Gradient Boosting,0.6721825275057212,0.0233212654440703,0.6685389016894161,0.6607427145003055,Development selection; recorded test values have disclosed prior exposure
+Tuned Random Forest,0.6638558124295877,0.0204684253487909,0.6605139881371785,0.6546517036047684,Development selection; recorded test values have disclosed prior exposure
+CatBoost,0.6691182191805094,0.0240110763435388,0.6647859982706968,,Development selection; recorded test values have disclosed prior exposure
+Tuned CatBoost,0.6727308513525021,0.0239731748264692,0.669342334562332,0.6658419468417027,Development selection; recorded test values have disclosed prior exposure
+RandomForest__FS-RAW-LIGHT-DEMO,0.6654733299096695,0.021314113463527,0.660873981206483,,Retrospective development extension; same-fold selection; no new test evaluation
+RandomForest__0,0.6638558124295877,0.0204684253487909,0.6605139881371785,,Retrospective development extension; same-fold selection; no new test evaluation
+LogisticRegression__0,0.6616561497949907,0.0216379510099045,0.6585183529089189,,Retrospective development extension; same-fold selection; no new test evaluation
+RandomForest__W,0.6613897884975268,0.0211775591779554,0.6583520617035263,,Retrospective development extension; same-fold selection; no new test evaluation
+RandomForest__FS-ENG-ALL,0.6613440043697251,0.0213248119560935,0.6574799447963136,,Retrospective development extension; same-fold selection; no new test evaluation
+LogisticRegression__W,0.6599847261254812,0.0217744614351758,0.6568603302705139,,Retrospective development extension; same-fold selection; no new test evaluation
+LogisticRegression__ROS,0.6587500755104514,0.0244690460996452,0.6564559298618273,,Retrospective development extension; same-fold selection; no new test evaluation
+RandomForest__ROS,0.6571610025858746,0.0197184318926265,0.6540418368194061,,Retrospective development extension; same-fold selection; no new test evaluation
+TunedSVM__W,0.6570830720391395,0.0214200651001262,0.6478470995856436,,Retrospective development extension; same-fold selection; no new test evaluation
+TunedSVM__ROS,0.6564078630731792,0.0217616142156815,0.6429110530183806,,Retrospective development extension; same-fold selection; no new test evaluation
+TunedSVM__0,0.6554592384105916,0.0151700205830764,0.6526622199267489,,Retrospective development extension; same-fold selection; no new test evaluation
+RandomForest__SMOTENC,0.6485503405453098,0.0196750366730409,0.6437697140397771,,Retrospective development extension; same-fold selection; no new test evaluation
+LogisticRegression__SMOTENC,0.6473138286301312,0.027912783098787,0.6443434365799208,,Retrospective development extension; same-fold selection; no new test evaluation
+TunedSVM__SMOTENC,0.6461491058389143,0.0205110044345078,0.6451042137922134,,Retrospective development extension; same-fold selection; no new test evaluation
+SVM tuning procedure (nested),0.6554592384105916,0.015170020583076427,0.6526622199267489,,Nested development evaluation of SVM search only; retrospective dataset

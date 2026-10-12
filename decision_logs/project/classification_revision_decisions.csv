@@ -1,0 +1,13 @@
+decision_id,owner,question,evidence,decision
+R01,Member 1,Dictionary regeneration,gender and SeniorCitizen are predictors in the full reference; wording now matches actual modelling and audits,Corrected generator and regenerated dictionary
+R02,Member 2,Imbalance controls,LR no balancing AP 0.661656; SMOTENC 0.647314,Retain no balancing for the reference; retain all comparison evidence
+R03,Member 2,Synthetic validity,No service contradictions in synthetic rows across all five folds; categorical SeniorCitizen retained,"Validated computational branch, not verified real customers; continuous synthetic tenure remains a limitation"
+R04,Member 3,SVM selection,"C=1, gamma=0.01; nested outer AP 0.655459",Include evaluated SVM challenger; retain historical three-model panel. SVM margins cannot use probability threshold 0.35
+R05,Member 3,Overfitting,Tuned SVM AP gap 0.008459 versus earlier default-SVM gap 0.074869,"Tuning reduced the gap; not proof of no overfitting. Keep train/validation gaps, learning curves and nested evidence"
+R06,Member 2 and 3,Nonlinear feature ablation,RF raw AP 0.663856; engineered 0.661344; reduced demographics 0.665473,"Engineering did not help this RF screen. Reduced demographics is a promising minimisation candidate, not automatically a new validated panel"
+R07,Member 4,Statistical language,Individual CI overlap is not equivalence; FPR is conditional on actual negatives,Corrected notebook interpretation and split-vote taxonomy wording
+R08,Member 4,New-input validation,Eight checks passed including valid development records and invalid categories/service combinations,Validate before prediction; new data is never used to fit the stored panel
+R09,All,Test provenance,Historical test has already been examined,Keep archived results unchanged; new experiments use development rows only; seek external/temporal data for prospective claims
+R10,All,Lecture scope,Relevant classification steps mapped to Lectures 1–7 and guides,"PCA, regression targets, stacking, kNN and Naive Bayes are not mandatory merely because mentioned in lectures"
+R11,Member 3,Reconstruction guards,Historical LR/GB search winners checked; CatBoost seed settings derived from the selected row,Fail if LR/GB winner changes instead of silently continuing; CatBoost seed outputs retained at identical parameter values
+R12,All,Execution scope,"Fresh 14-branch comparison, 45-fit SVM grid plus refit, nested 5x3-fold search, input/synthetic audit, Member 1 EDA and revision notebook",Earlier model/seed fits are retained; no claim that all historical training was rerun in this revision

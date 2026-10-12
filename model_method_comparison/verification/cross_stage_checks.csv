@@ -1,0 +1,34 @@
+check,passed
+development labels,True
+handoff source hash model_method_comparison/results/member3/predictions/candidate_models_updated_oof.csv,True
+handoff source hash model_method_comparison/results/member3/predictions/catboost_tuning_oof_probabilities.csv,True
+handoff source hash model_method_comparison/results/member3/predictions/random_forest_seed_oof_predictions.csv,True
+handoff source hash model_method_comparison/results/member3/predictions/catboost_seed_oof_predictions.csv,True
+pairwise preprocessing disagreement,True
+binary preprocessing disagreement,True
+preprocessing labels and population,True
+split votes are actual-label groups,True
+triage state rule,True
+mean fold AP Logistic Regression,True
+mean fold AP Decision Tree,True
+mean fold AP Random Forest,True
+mean fold AP Gradient Boosting,True
+mean fold AP Tuned Random Forest,True
+mean fold AP CatBoost,True
+mean fold AP Tuned CatBoost,True
+revision labels,True
+revision AP RandomForest__FS-RAW-LIGHT-DEMO,True
+revision AP RandomForest__0,True
+revision AP LogisticRegression__0,True
+revision AP RandomForest__W,True
+revision AP RandomForest__FS-ENG-ALL,True
+revision AP LogisticRegression__W,True
+revision AP LogisticRegression__ROS,True
+revision AP RandomForest__ROS,True
+revision AP TunedSVM__W,True
+revision AP TunedSVM__ROS,True
+revision AP TunedSVM__0,True
+revision AP RandomForest__SMOTENC,True
+revision AP LogisticRegression__SMOTENC,True
+revision AP TunedSVM__SMOTENC,True
+nested SVM AP,True

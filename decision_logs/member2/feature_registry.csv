@@ -1,0 +1,26 @@
+Feature,Origin,Type,AllowedUse,LeakageRisk,Status,FormulaOrSource,Notes
+customerID,Raw,Identifier,Tracking/join only,ID_RISK,EXCLUDE,Raw dataset,Unique customer key; no behavioural meaning.
+gender,Raw,Demographic/context,Predictor/audit candidate,Low,FULL_OR_MINIMIZED,Raw dataset,Included only if approved feature set uses it.
+SeniorCitizen,Raw,Demographic/context,Predictor/audit candidate,Low,FULL_OR_MINIMIZED,Raw dataset,Stored as 0/1 but conceptually demographic category.
+Partner,Raw,Profile/context,Predictor candidate,Low,FULL_OR_MINIMIZED,Raw dataset,Association is not causal.
+Dependents,Raw,Profile/context,Predictor candidate,Low,FULL_OR_MINIMIZED,Raw dataset,Association is not causal.
+tenure,Raw,Relationship history,Predictor,Low,APPROVED,Raw dataset,Numeric customer history.
+PhoneService,Raw,Service,Predictor,Low,APPROVED,Raw dataset,Structural upstream service state.
+MultipleLines,Raw,Service,Predictor,Low,APPROVED,Raw dataset,Preserve No phone service.
+InternetService,Raw,Service,Predictor,Low,APPROVED,Raw dataset,Preserve DSL/Fiber/No.
+OnlineSecurity,Raw,Service add-on,Predictor,Low,APPROVED,Raw dataset,Preserve No internet service.
+OnlineBackup,Raw,Service add-on,Predictor,Low,APPROVED,Raw dataset,Preserve No internet service.
+DeviceProtection,Raw,Service add-on,Predictor,Low,APPROVED,Raw dataset,Preserve No internet service.
+TechSupport,Raw,Service add-on,Predictor,Low,APPROVED,Raw dataset,Preserve No internet service.
+StreamingTV,Raw,Service add-on,Predictor,Low,APPROVED,Raw dataset,Preserve No internet service.
+StreamingMovies,Raw,Service add-on,Predictor,Low,APPROVED,Raw dataset,Preserve No internet service.
+Contract,Raw,Relationship/commitment,Predictor,Low,APPROVED,Raw dataset,Observed association is not causal.
+PaperlessBilling,Raw,Billing,Predictor,Low,APPROVED,Raw dataset,Contextual billing choice.
+PaymentMethod,Raw,Billing,Predictor,Low,APPROVED,Raw dataset,Preserve category semantics.
+MonthlyCharges,Raw,Numeric billing,Predictor,Low,APPROVED,Raw dataset,Scale for linear/distance models.
+TotalCharges,Raw,Numeric billing,Predictor,Low,APPROVED_TC_ZERO,Raw dataset,Convert numeric; 11 structural blanks -> zero default after CV comparison.
+Churn,Raw,Target,Target only,HIGH,FORBIDDEN_PREDICTOR,Raw dataset,Outcome label; never enter X.
+ServiceCount,Engineered,Derived telecom hypothesis,Optional Member 3 challenger only,Low,EXPERIMENTAL_NOT_DEFAULT,Count active phone/internet/add-on services,Linear-model ablation did not show meaningful PR-AUC improvement.
+SupportGap,Engineered,Derived telecom hypothesis,Optional Member 3 challenger only,Low,EXPERIMENTAL_NOT_DEFAULT,"For internet customers, count No across OnlineSecurity, DeviceProtection, TechSupport",Linear-model ablation did not show meaningful PR-AUC improvement.
+AutoPay,Engineered,Derived telecom hypothesis,Optional Member 3 challenger only,Low,EXPERIMENTAL_NOT_DEFAULT,1 for automatic bank/card payment else 0,Linear-model ablation did not show meaningful PR-AUC improvement.
+ChargePerService,Engineered,Derived telecom hypothesis,Optional Member 3 challenger only,Low,EXPERIMENTAL_NOT_DEFAULT,"MonthlyCharges / max(ServiceCount,1)",Linear-model ablation did not show meaningful PR-AUC improvement.

@@ -1,0 +1,5 @@
+Profile,n,Churners,ChurnRate,ChurnRate_pct
+M2M + long tenure (>=49m),342,89,0.260233918128655,26.0
+Fiber + TechSupport=Yes,866,196,0.22632794457274827,22.6
+Fiber + Two-year contract,429,31,0.07226107226107226,7.2
+High MonthlyCharges>=80 + Two-year,636,33,0.05188679245283019,5.2

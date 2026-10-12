@@ -1,0 +1,12 @@
+Decision,Reason_and_scope
+Evaluation provenance,"Historical EDA used all 7,043 records; earlier final-test prediction exposure was reported. Its influence on earlier choices is unknown. The existing split is retained. This is not a pristine untouched test."
+Frozen policy,"Recorded 2026-10-02 policy: Tuned CatBoost, Gradient Boosting, Tuned Random Forest; raw probabilities; threshold >=0.35; ACT/REVIEW/MONITOR/HOLD for 3/2/1/0 votes. No conformal guarantee."
+Selection uncertainty,"Hyperparameters and operating threshold reuse development folds. OOF excludes rows from fitting, but is not nested selection evaluation. Bootstrap intervals condition on fixed predictions."
+Model proximity,Initial proposal suggested a 2% ROC-AUC criterion; final rule is an absolute 0.010 mean-fold average-precision gap. Tolerances were chosen after inspecting development results and do not prove equivalence.
+Decision definitions,Individual-model metrics use each model threshold; selective correctness uses majority vote; subgroup recall uses ACT-only; abstained split-vote outcomes are labelled by actual class rather than called FP/FN.
+Code repair,"Corrected imports to the canonical pipeline, removed Colab-only backup/download calls, regenerated handoffs from training exports, pinned artifact-compatible dependencies, and standardized pairwise preprocessing disagreement counts."
+Outliers,Development-only numeric plausibility and IQR audit added. Retain finite nonnegative observations; distributional extremeness alone does not establish erroneous billing.
+Business conclusion,"TRIAGE did not establish improved budget-constrained churn capture, intervention benefit or ROI. Agreement is not correctness. Demographic audits do not establish fairness."
+AI assistance,"AI assistance was used in this review and repair for code edits, integration/export scripts, tests, and packaging. Prior package describes additional assistance with planning, debugging and writing. Individual contributors must verify their own contributions and disclosure; no signatures or personal attestations are supplied."
+Retrospective diagnostics,"L1/L2 Logistic Regression, RBF SVM, learning curves and integration are post-freeze development diagnostics. They did not choose the historical final policy."
+Capacity bootstrap,Paired capture intervals resample fixed selections; no within-bootstrap re-ranking or model retraining. They are not full-policy uncertainty intervals.

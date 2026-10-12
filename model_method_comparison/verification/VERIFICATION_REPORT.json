@@ -1,0 +1,17 @@
+{
+  "checks": 31,
+  "passed": 31,
+  "failed": 0,
+  "model_status": "reconstructed_equivalent_predictions_not_original_binary_hashes",
+  "final_test_policy_unchanged": {
+    "panel": [
+      "Tuned_CatBoost",
+      "Gradient_Boosting",
+      "Tuned_Random_Forest"
+    ],
+    "threshold": 0.35
+  },
+  "python": "3.13.5",
+  "sklearn": "1.8.0",
+  "catboost": "1.2.8"
+}

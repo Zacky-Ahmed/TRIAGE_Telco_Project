@@ -1,0 +1,7 @@
+Model A,Model B,Customers with different predictions,Disagreement percentage
+Gradient Boosting,Logistic Regression,337,5.981540646077387
+Tuned Random Forest,Logistic Regression,329,5.839545615903444
+Tuned CatBoost,Logistic Regression,282,5.005324813631523
+Gradient Boosting,Tuned Random Forest,202,3.5853745118920837
+Tuned CatBoost,Tuned Random Forest,189,3.3546325878594248
+Tuned CatBoost,Gradient Boosting,159,2.8221512247071354

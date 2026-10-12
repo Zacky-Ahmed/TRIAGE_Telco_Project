@@ -1,0 +1,7 @@
+Issue_ID,Column_s,Evidence,Why_it_matters,Owner,Next_action
+DQ-01,TotalCharges,11 blank strings in raw file,Numeric conversion/missingness may be structural,M1 → M2,Investigate affected customers before choosing treatment
+DQ-02,customerID,7043 unique IDs for 7043 rows,Identifier could create leakage/no behavioural meaning,M1/M2,Keep only as join key; exclude from predictors
+DQ-03,Churn,26.5% Churn=Yes,Moderate imbalance; accuracy alone can mislead,M1 → M4,Use class-aware metrics later (precision/recall/F1/PR-AUC)
+DQ-04,Service columns,"Labels such as ""No internet service"" and ""No phone service"" exist",Could be wrongly collapsed into ordinary No or missing,M1 → M2,Preserve structural meaning during encoding
+DQ-05,All columns,Exact duplicate rows = 0,Duplicate records could distort descriptive rates,M1,Document result; no duplicate removal needed if zero
+DQ-06,Object categories,Category labels inspected with value_counts,Typos/near-duplicate labels could affect encoding,M1 → M2,Preserve verified labels; document any recoding

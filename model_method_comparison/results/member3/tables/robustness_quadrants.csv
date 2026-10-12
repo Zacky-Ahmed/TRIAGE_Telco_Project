@@ -1,0 +1,5 @@
+Quadrant,Customers,Percent
+Stable in both dimensions,4208,74.6893858714945
+Preprocessing-sensitive only,963,17.0926517571885
+Model-family-sensitive only,312,5.537806176783812
+Sensitive in both dimensions,151,2.6801561945331915

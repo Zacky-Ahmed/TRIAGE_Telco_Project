@@ -1,0 +1,6 @@
+Model,MeanAveragePrecision,GapFromBest,Within_0.005,Within_0.010,Within_0.015
+Tuned CatBoost,0.6727308513525021,0.0,True,True,True
+Gradient Boosting,0.6721825275057212,0.0005483238467809404,True,True,True
+Tuned Random Forest,0.6638558124295877,0.008875038922914413,False,True,True
+Logistic Regression,0.6616561497949907,0.011074701557511446,False,False,True
+Decision Tree,0.6139545176342192,0.05877633371828295,False,False,False

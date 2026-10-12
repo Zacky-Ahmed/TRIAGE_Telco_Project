@@ -1,0 +1,15 @@
+source,topic,implementation_or_reason,evidence
+Lecture 1,Business framing / supervised task,Binary churn classification; retention prioritisation; CRISP-DM stages,Member 1 business framing; Final_Analysis.ipynb
+Lecture 2,Data quality and EDA,"Types, target prevalence, duplicates, missing values, outliers, relationships; preserve raw data and frozen splits",Member 1 EDA; supplementary plotting script
+Lecture 3,"Cleaning, encoding, scaling, pipelines","Structural-zero versus median TotalCharges; fold-local imputers, one-hot encoding, scaling; raw-input inference contract",pipeline_contract.py; Member 2 notebook
+Lecture 4,Feature engineering / selection,"ServiceCount, SupportGap, AutoPay, ChargePerService; raw versus engineered and reduced demographics; nonlinear follow-up",Member 2 notebook; classification_revision.py
+Lecture 4,Class imbalance / SMOTE,"Stratification; none, class weights, ROS, SMOTENC across LR/RF/SVM. No plain SMOTE on one-hot categories",classification_revision.py; verify_classification_revision.py
+Lecture 4,PCA,Not required: modest mixed-feature space; preserving service interpretation is preferable here. No claim that PCA was implemented,Scope decision
+Lecture 5,Classifier comparison,"Logistic Regression, Decision Tree, SVM, Random Forest, Gradient Boosting and CatBoost; kNN/Naive Bayes optional, not compulsory checklist items",Member 3 model development and classification revision
+Lecture 5,Evaluation / thresholds,"Confusion matrices, precision, recall, F1, ROC-AUC, AP/PR curves, thresholds and capacity trade-offs",Member 4 notebooks
+Lecture 6,Generalisation / regularisation,"Train-validation gaps, learning curves, L1/L2 logistic penalties, complexity control. Regression target losses/Ridge regression not applicable to binary output",Member 3 generalisation audit; nested SVM
+Lecture 7,Ensembles / tuning,RF bagging; GB/CatBoost boosting; grid search; tuning versus initial models; seeds; operational voting; calibration diagnostics,Member 3 and Member 4 notebooks
+Lecture 7,Stacking / random search,Optional alternatives; not claimed implemented. Small explicit grids retain inspectable search scope; stacking would need additional leakage-safe meta-model validation,Scope decision
+Member guides,Evidence and handoffs,"Preserve IDs/folds, decision logs, sensitivity and disagreement atlas, uncertainty/error forensics, new-customer inference",Four-member notebooks and handoff CSVs
+Assignment descriptor,Defensible reasoning and deliverables,"Code/data/dictionary/logs/comparison included; final report, demo and individual learning journey are separate submission items",Four-category ZIP
+All stages,Limits of evidence,Historical test already examined; retrospective extensions cannot restore an untouched holdout. No causal/fairness guarantee or proven business savings,Protocol and decision logs

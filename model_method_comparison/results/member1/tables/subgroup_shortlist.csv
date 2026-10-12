@@ -1,0 +1,21 @@
+description,n,churn_rate,lift_vs_overall,distance_from_1,churn_rate_pct
+SeniorCitizen=1 AND Contract=Month-to-month,807,0.5464684014869888,2.06,1.0592707071550893,54.6
+InternetService=Fiber optic AND Contract=Month-to-month,2128,0.5460526315789473,2.06,1.057703950888457,54.6
+Contract=Month-to-month AND PaymentMethod=Electronic check,1850,0.5372972972972972,2.02,1.024711003137969,53.7
+SeniorCitizen=1 AND PaymentMethod=Electronic check,594,0.5336700336700336,2.01,1.011042293813829,53.4
+InternetService=Fiber optic AND PaymentMethod=Electronic check,1595,0.5322884012539185,2.01,1.0058358534143115,53.2
+TechSupport=No AND PaymentMethod=Electronic check,1730,0.5317919075144508,2.0,1.0039649034907847,53.2
+OnlineSecurity=No AND PaymentMethod=Electronic check,1734,0.5317185697808535,2.0,1.0036885430532645,53.2
+OnlineSecurity=No AND Contract=Month-to-month,2631,0.5104522995058913,1.92,0.9235503185767748,51.0
+Partner=No AND PaymentMethod=Electronic check,1362,0.5080763582966226,1.91,0.9145969991883962,50.8
+SeniorCitizen=1 AND TechSupport=No,830,0.5060240963855421,1.91,0.9068634086909433,50.6
+TechSupport=No AND Contract=Month-to-month,2680,0.503731343283582,1.9,0.8982235691526312,50.4
+SeniorCitizen=1 AND OnlineSecurity=No,808,0.5037128712871287,1.9,0.8981539606609135,50.4
+InternetService=No AND Contract=Two year,638,0.007836990595611285,0.03,0.9704676700027339,0.8
+OnlineSecurity=No internet service AND Contract=Two year,638,0.007836990595611285,0.03,0.9704676700027339,0.8
+TechSupport=No internet service AND Contract=Two year,638,0.007836990595611285,0.03,0.9704676700027339,0.8
+Contract=Two year AND PaymentMethod=Mailed check,382,0.007853403141361256,0.03,0.9704058221912213,0.8
+Contract=Two year AND PaperlessBilling=No,910,0.016483516483516484,0.06,0.93788474767608,1.6
+InternetService=DSL AND Contract=Two year,628,0.01910828025477707,0.07,0.9279937839302328,1.9
+Contract=Two year AND PaymentMethod=Credit card (automatic),581,0.022375215146299483,0.08,0.9156829105000603,2.2
+Dependents=Yes AND Contract=Two year,790,0.02278481012658228,0.09,0.9141394233699738,2.3

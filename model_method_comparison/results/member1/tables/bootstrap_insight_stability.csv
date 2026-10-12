@@ -1,0 +1,5 @@
+Contrast,MedianGap,CI_low,CI_high,DirectionStability,B_used
+M2M vs Two-year,39.85,38.15,41.65,100.0,500
+Electronic check vs Credit-card auto,30.1,27.6,32.71,100.0,500
+TechSupport No vs Yes (internet customers),26.44,24.42,28.79,100.0,500
+Fiber optic vs DSL,22.83,20.54,25.3,100.0,500

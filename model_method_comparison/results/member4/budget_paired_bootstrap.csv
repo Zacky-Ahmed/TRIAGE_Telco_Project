@@ -1,0 +1,7 @@
+capacity,TRIAGE minus,capture_difference,ci_low,ci_high,includes_zero
+10%,Risk-only (panel average),0.0,0.0,0.0,True
+10%,Risk-only (Tuned CatBoost),-0.003515411206647845,-0.011636864803574249,0.005333600534402137,True
+20%,Risk-only (panel average),0.0,0.0,0.0,True
+20%,Risk-only (Tuned CatBoost),-0.0045987292691854215,-0.013883910248752795,0.004818034605483796,True
+30%,Risk-only (panel average),0.0007281159733692979,-0.0059210526315789476,0.006845214590337793,True
+30%,Risk-only (Tuned CatBoost),-0.010193440129414153,-0.01959524640729677,-0.0006742634865167709,False

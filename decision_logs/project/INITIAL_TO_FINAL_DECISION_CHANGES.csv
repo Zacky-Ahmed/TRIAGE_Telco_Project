@@ -1,0 +1,6 @@
+Original,Implemented,Reason
+Illustrative ROC-AUC proximity,Absolute mean-fold AP gap 0.010,Exploratory development comparison
+Conceptual risk stability matrix,Three model votes at 0.35,Explicit reproducible policy
+Engineered feature hypotheses,Experimental not default,Negative linear ablation
+Stable High-Risk Customer Profiling,Retained with supporting Atlas,Preserve coherence with original secondary lens
+Expected prioritisation benefit,No robust capture advantage claimed,Equal-budget evidence
